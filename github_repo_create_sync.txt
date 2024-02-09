@@ -3,12 +3,13 @@ common way to create a repo in github:
 #1 create new remote repo from github then clone to local: 
 (SSH key already set in local and pub key add to github account, so okay to use SSH way)
 1. create new repo on github using "+", then add new repository
-2. open a local terminal, then under dir where new repo locate (workspace): git clone git@github.com:chevernemilia/test_repo_creation.git
-3. better create a master branch by: git checkout -b master and commit back to remote (work on master than main)
+2. obtain SSH address by go to: Code -> clone ->ssh -> copy the <address>
+3. open a local terminal, then under dir where new repo locate (workspace): git clone <addreess> (git@github.com:chevernemilia/<reponame>.git)
+4. better create a master branch by: git checkout -b master and commit back to remote (work on master than main)
 
 
 
-#2 
+other note upon github repo creation:
 Quick setup — if you’ve done this kind of thing before
 or	
 git@github.com:chevernemilia/test_repo_creation.git
@@ -26,3 +27,5 @@ git push -u origin main
 git remote add origin git@github.com:chevernemilia/test_repo_creation.git
 git branch -M main
 git push -u origin main
+
+#2 create folder, file and make it git-capable in local and push to remote using a specific address (TBD)
